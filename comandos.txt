@@ -1,0 +1,48 @@
+gavazzi@DESKTOP-NTISDJ0:~$ nano
+gavazzi@DESKTOP-NTISDJ0:~$ nano calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ./calculadora.sh
+-bash: ./calculadora.sh: Permission denied
+gavazzi@DESKTOP-NTISDJ0:~$ nano calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ chmod =x calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ./calculadora.sh
+python3: can't open file '/home/gavazzi/./calculadora.sh': [Errno 13] Permission denied
+gavazzi@DESKTOP-NTISDJ0:~$ chmod +x /home/gavazzi/calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ /home/gavazzi/calculadora.sh
+python3: can't open file '/home/gavazzi/calculadora.sh': [Errno 13] Permission denied
+gavazzi@DESKTOP-NTISDJ0:~$ nano calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ nano calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ chmod +rx calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ nano calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ls -l calculadora.sh
+-r-xr-xr-x 1 gavazzi gavazzi 2172 Dec  9 16:39 calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ls -ld .
+drwxr-x--- 5 gavazzi gavazzi 4096 Dec  9 16:44 .
+gavazzi@DESKTOP-NTISDJ0:~$ chmod u+w calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ nano calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ./calculadora.sh
+Digite o primeiro número (ou 's' para sair): 501
+Digite a operação (+, -, *, /): *
+Digite o segundo número: 45
+Resultado: 22545.0
+Deseja continuar a partir do resultado anterior? (s/n): s
+O resultado anterior é 22545.0. Agora, digite a próxima operação:
+Digite a operação (+, -, *, /): /
+Digite o segundo número: 55
+Resultado: 409.90909090909093
+Deseja continuar a partir do resultado anterior? (s/n): n
+Calculadora reiniciada.
+Digite o primeiro número (ou 's' para sair): s
+gavazzi@DESKTOP-NTISDJ0:~$ ls -l calculadora.sh
+-rwxr-xr-x 1 gavazzi gavazzi 2172 Dec  9 16:46 calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ chmod 644 calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ls -l calculadora.sh
+-rw-r--r-- 1 gavazzi gavazzi 2172 Dec  9 16:46 calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ./calculadora.sh
+-bash: ./calculadora.sh: Permission denied
+gavazzi@DESKTOP-NTISDJ0:~$ chmod 755 calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ls -l calculçadora.sh
+ls: cannot access 'calculçadora.sh': No such file or directory
+gavazzi@DESKTOP-NTISDJ0:~$ ls -l calculadora.sh
+-rwxr-xr-x 1 gavazzi gavazzi 2172 Dec  9 16:46 calculadora.sh
+gavazzi@DESKTOP-NTISDJ0:~$ ./calculadora.sh
+Digite o primeiro número (ou 's' para sair): s
